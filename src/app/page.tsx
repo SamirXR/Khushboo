@@ -272,7 +272,7 @@ function Work() {
       category: 'Documentation',
       description: 'Capturing the essence of social impact programmes through video and written storytelling. Preserving truth and emotion in every frame.',
       clients: ['Lixil', 'BMGF', 'Ahmedabad', 'Rajasthan', 'Chhindwara'],
-      link: undefined as string | undefined,
+      link: '/work/documentation' as string | undefined,
       externalLink: undefined as string | undefined,
       image: '/work-documentation.gif',
     },
@@ -290,8 +290,8 @@ function Work() {
       category: 'Writing & Thought Pieces',
       description: 'Long-form pieces around identity, modern intimacy, emotional culture, gender, burnout, internet behavior, freedom and selfhood.',
       clients: ['Substack'],
-      link: 'https://substack.com' as string | undefined,
-      externalLink: undefined as string | undefined,
+      link: undefined as string | undefined,
+      externalLink: 'https://substack.com' as string | undefined,
       image: '/work-writing.png',
     },
     {
@@ -360,19 +360,19 @@ function Work() {
                     {item.clients.map((client, j) => (
                       <React.Fragment key={j}>
                         {j > 0 && <span className="text-[#a0877a] mx-2 text-[0.55rem]">&middot;</span>}
-                        {item.link && !item.externalLink ? (
-                          <a href={item.link} target="_blank" rel="noopener noreferrer" className="warm-tag hover:text-[#2c2825] cursor-pointer">{client} ↗</a>
-                        ) : item.link && item.externalLink ? (
-                          <Link href={item.link} className="warm-tag hover:text-[#2c2825] cursor-pointer">See more ↗</Link>
-                        ) : (
-                          <span className="warm-tag">{client}</span>
-                        )}
+                        <span className="warm-tag">{client}</span>
                       </React.Fragment>
                     ))}
+                    {item.link && (
+                      <React.Fragment key="see-more">
+                        {item.clients.length > 0 && <span className="text-[#a0877a] mx-2 text-[0.55rem]">&middot;</span>}
+                        <Link href={item.link} className="warm-tag hover:text-[#2c2825] cursor-pointer">See more ↗</Link>
+                      </React.Fragment>
+                    )}
                     {item.externalLink && (
                       <React.Fragment key="external">
                         <span className="text-[#a0877a] mx-2 text-[0.55rem]">&middot;</span>
-                        <a href={item.externalLink} target="_blank" rel="noopener noreferrer" className="warm-tag hover:text-[#2c2825] cursor-pointer">binti.tz ↗</a>
+                        <a href={item.externalLink} target="_blank" rel="noopener noreferrer" className="warm-tag hover:text-[#2c2825] cursor-pointer">{new URL(item.externalLink).hostname.replace('www.', '')} ↗</a>
                       </React.Fragment>
                     )}
                   </div>
