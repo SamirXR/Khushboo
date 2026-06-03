@@ -50,15 +50,10 @@ export default function DocumentationPage() {
           <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
             My work has spanned both written and audiovisual documentation across sectors such as public health, gender, education, community development, and behaviour change communication.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-12">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
             What began as documentation evolved into end-to-end narrative building: translating complex grassroots realities into stories, films, reports, and communication products that institutions could use for advocacy, visibility, training, and public engagement.
           </p>
         </motion.div>
-
-        {/* Divider */}
-        <div className="section-divider py-8 md:py-12">
-          <div className="divider-dot" />
-        </div>
 
         {/* Field-Based Storytelling */}
         <motion.div
@@ -75,15 +70,10 @@ export default function DocumentationPage() {
           <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
             Beyond capturing stories, I was also involved in pretesting communication materials directly with communities to understand how messaging was being received in real contexts. These insights often informed improvements in campaign products, narrative approaches, and visual communication strategies.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-12">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
             This process strengthened my ability to balance institutional objectives with emotional authenticity and cultural sensitivity.
           </p>
         </motion.div>
-
-        {/* Divider */}
-        <div className="section-divider py-8 md:py-12">
-          <div className="divider-dot" />
-        </div>
 
         {/* End-to-End Documentation Leadership */}
         <motion.div
@@ -126,7 +116,7 @@ export default function DocumentationPage() {
           </div>
 
           {/* Written Documentation */}
-          <div className="mb-12">
+          <div className="mb-16">
             <h3 className="text-[0.85rem] font-normal tracking-tight mb-4">Written Documentation</h3>
             <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-4">
               Alongside films, I also worked extensively on written documentation and publication projects. This included:
@@ -148,11 +138,6 @@ export default function DocumentationPage() {
           </div>
         </motion.div>
 
-        {/* Divider */}
-        <div className="section-divider py-8 md:py-12">
-          <div className="divider-dot" />
-        </div>
-
         {/* Approach */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -168,13 +153,10 @@ export default function DocumentationPage() {
           <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
             I am particularly drawn to work that requires navigating complexity: building trust with communities, translating field realities into compelling narratives, and managing creative execution without losing emotional nuance.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-12">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-8">
             Across projects, my role often became a bridge between institutions, creative teams, and the people whose stories were being told.
           </p>
         </motion.div>
-
-        {/* Bottom rule */}
-        <div className="quiet-rule mt-8 mb-8" />
       </div>
     </main>
   )

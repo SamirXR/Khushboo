@@ -52,15 +52,10 @@ export default function BintiCampaign() {
           <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
             In Tanzania, girls can legally be married as young as 14, often forcing them to leave school and limiting their health, safety, and future opportunities. UNICEF Tanzania wanted a public campaign capable of shifting the social narrative around child marriage and building widespread public support for change.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-12">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
             I led the development of the campaign concept, presented multiple creative directions to the client, and ultimately pitched Binti — the idea that was selected for execution.
           </p>
         </motion.div>
-
-        {/* Divider */}
-        <div className="section-divider py-8 md:py-12">
-          <div className="divider-dot" />
-        </div>
 
         {/* The Idea */}
         <motion.div
@@ -77,15 +72,10 @@ export default function BintiCampaign() {
           <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
             The intention was to move the conversation away from statistics and toward emotional connection. Binti embodied possibility: a girl with dreams, education, curiosity, and a future still unfolding.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-12">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
             Rather than framing girls as passive victims, the campaign positioned them as individuals whose potential deserved protection and investment.
           </p>
         </motion.div>
-
-        {/* Divider */}
-        <div className="section-divider py-8 md:py-12">
-          <div className="divider-dot" />
-        </div>
 
         {/* My Role */}
         <motion.div
@@ -96,7 +86,7 @@ export default function BintiCampaign() {
           className="max-w-2xl"
         >
           <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">My Role</h2>
-          <ul className="space-y-3 mb-12">
+          <ul className="space-y-3 mb-16">
             {[
               'Developed and pitched the campaign concept to UNICEF Tanzania',
               'Presented multiple creative routes, with Binti selected as the lead direction',
@@ -112,11 +102,6 @@ export default function BintiCampaign() {
           </ul>
         </motion.div>
 
-        {/* Divider */}
-        <div className="section-divider py-8 md:py-12">
-          <div className="divider-dot" />
-        </div>
-
         {/* Design & Narrative Approach */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -130,7 +115,7 @@ export default function BintiCampaign() {
             A major focus of the campaign was ensuring Binti felt culturally authentic and instantly recognizable to Tanzanian audiences.
           </p>
 
-          <div className="space-y-8 mb-12">
+          <div className="space-y-8 mb-16">
             <div>
               <h3 className="text-[0.85rem] font-normal tracking-tight mb-3">Cultural Identity Through Design</h3>
               <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078]">
@@ -152,11 +137,6 @@ export default function BintiCampaign() {
           </div>
         </motion.div>
 
-        {/* Divider */}
-        <div className="section-divider py-8 md:py-12">
-          <div className="divider-dot" />
-        </div>
-
         {/* Execution */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -172,15 +152,10 @@ export default function BintiCampaign() {
           <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
             The microsite was designed as an immersive storytelling journey that introduced audiences to Binti&apos;s world before inviting them to pledge support against child marriage.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-12">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
             I worked closely with the design and animation teams to ensure the emotional tone and narrative remained consistent across all touchpoints.
           </p>
         </motion.div>
-
-        {/* Divider */}
-        <div className="section-divider py-8 md:py-12">
-          <div className="divider-dot" />
-        </div>
 
         {/* Impact */}
         <motion.div

@@ -339,13 +339,15 @@ function Work() {
                 transition={{ duration: 0.7, delay: i * 0.07, ease: [0.25, 0.1, 0.25, 1] }}
               >
                 <div className="work-card-v2 group">
-                  <div className="relative overflow-hidden rounded-sm mb-5">
-                    <img
-                      src={item.image}
-                      alt={item.category}
-                      className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-                    />
-                  </div>
+                  <Link href={item.link || '#'} className={item.link ? 'cursor-pointer' : 'cursor-default'}>
+                    <div className="relative overflow-hidden rounded-sm mb-5">
+                      <img
+                        src={item.image}
+                        alt={item.category}
+                        className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                  </Link>
 
                   <div className="flex items-baseline gap-3 mb-3">
                     <span className="section-label shrink-0">{item.number}</span>
