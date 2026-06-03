@@ -75,7 +75,7 @@ export default function DocumentationPage() {
                 This process strengthened my ability to balance institutional objectives with emotional authenticity and cultural sensitivity.
               </p>
             </div>
-            <div className="relative overflow-hidden rounded-sm">
+            <div className="relative overflow-hidden rounded-sm lg:max-w-sm lg:ml-auto">
               <img
                 src="/work-fieldstorytelling.gif"
                 alt="Field-Based Storytelling"
