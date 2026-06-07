@@ -102,7 +102,6 @@ export default function DocumentationPage() {
               <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-8">
                 Over the years, I have independently handled multiple stages of the documentation pipeline, from concept development to final delivery.
               </p>
-              <h3 className="text-[0.85rem] font-normal tracking-tight mb-4">Video Documentation</h3>
               <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-4">
                 My work included:
               </p>
@@ -137,7 +136,6 @@ export default function DocumentationPage() {
 
           {/* Written Documentation */}
           <div className="mb-16">
-            <h3 className="text-[0.85rem] font-normal tracking-tight mb-4">Written Documentation</h3>
             <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-4">
               Alongside films, I also worked extensively on written documentation and publication projects. This included:
             </p>
