@@ -93,38 +93,51 @@ export default function DocumentationPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-30px' }}
           transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-          className="max-w-2xl"
         >
           <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">End-to-End Documentation Leadership</h2>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-10">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-10 max-w-2xl">
             Over the years, I have independently handled multiple stages of the documentation pipeline, from concept development to final delivery.
           </p>
 
           {/* Video Documentation */}
-          <div className="mb-10">
-            <h3 className="text-[0.85rem] font-normal tracking-tight mb-4">Video Documentation</h3>
-            <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-4">
-              My work included:
-            </p>
-            <ul className="space-y-3">
-              {[
-                'Scriptwriting and narrative structuring',
-                'Interviewing stakeholders across levels, from district collectors and government officials to frontline workers and community members',
-                'Client communication and stakeholder management',
-                'Shoot planning and field logistics',
-                'Vendor and production coordination',
-                'On-ground finance management',
-                'Leading compact creative teams in high-pressure field environments',
-                'Maintaining creative continuity during fast-moving shoots',
-                'Supervising editing and post-production',
-                'Managing feedback cycles and delivering final films',
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60 mt-2" />
-                  <span className="text-[0.9rem] font-light leading-[1.7] text-[#8a8078]">{item}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-10">
+            <div>
+              <h3 className="text-[0.85rem] font-normal tracking-tight mb-4">Video Documentation</h3>
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-4">
+                My work included:
+              </p>
+              <ul className="space-y-3">
+                {[
+                  'Scriptwriting and narrative structuring',
+                  'Interviewing stakeholders across levels, from district collectors and government officials to frontline workers and community members',
+                  'Client communication and stakeholder management',
+                  'Shoot planning and field logistics',
+                  'Vendor and production coordination',
+                  'On-ground finance management',
+                  'Leading compact creative teams in high-pressure field environments',
+                  'Maintaining creative continuity during fast-moving shoots',
+                  'Supervising editing and post-production',
+                  'Managing feedback cycles and delivering final films',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60 mt-2" />
+                    <span className="text-[0.9rem] font-light leading-[1.7] text-[#8a8078]">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <div className="w-full max-w-sm aspect-video rounded-sm overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/pss01GIDXIc"
+                  title="India UNICEF-BMGF FSSM film June 2024"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Written Documentation */}
