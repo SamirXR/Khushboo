@@ -59,21 +59,62 @@ export default function CreativeDirectionPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-30px' }}
           transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          className="max-w-2xl"
+        >
+          <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">How I Work</h2>
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+            My creative process begins with understanding the problem.
+          </p>
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+            I combine research, narrative exploration, visual references, and instinct to identify the strongest creative direction. Rather than jumping straight to outputs, I focus on finding the core idea that can hold a campaign, film, publication, or communication product together.
+          </p>
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+            I am particularly interested in making complex social issues accessible, emotionally resonant, and actionable.
+          </p>
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
+            Throughout the process, I frequently test concepts informally with colleagues, friends, and relevant audiences to understand how ideas land before they reach clients or the public.
+          </p>
+        </motion.div>
+
+        {/* My Role */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-30px' }}
+          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          className="pt-16 md:pt-24"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
-              <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">How I Work</h2>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
-                My creative process begins with understanding the problem.
+              <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">My Role</h2>
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-8">
+                As a creative lead, I often act as the bridge between clients, creative teams, subject experts, and field realities.
               </p>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
-                I combine research, narrative exploration, visual references, and instinct to identify the strongest creative direction. Rather than jumping straight to outputs, I focus on finding the core idea that can hold a campaign, film, publication, or communication product together.
+              <p className="text-[0.85rem] font-light leading-[1.8] text-[#8a8078] mb-4">
+                My responsibilities have included:
               </p>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
-                I am particularly interested in making complex social issues accessible, emotionally resonant, and actionable.
-              </p>
+              <ul className="space-y-3 mb-10">
+                {[
+                  'Concept development and creative strategy',
+                  'Pitch creation and client presentations',
+                  'Campaign and narrative development',
+                  'Stakeholder and client management',
+                  'Creative problem-solving across project stages',
+                  'Story and script development',
+                  'Guiding visual and narrative direction',
+                  'Reviewing storyboards, illustrations, and animations',
+                  'Collaborating closely with art directors and designers to refine creative outputs',
+                  'Leading compact multidisciplinary teams',
+                  'Supervising feedback cycles and final delivery',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60 mt-2" />
+                    <span className="text-[0.9rem] font-light leading-[1.7] text-[#8a8078]">{item}</span>
+                  </li>
+                ))}
+              </ul>
               <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078]">
-                Throughout the process, I frequently test concepts informally with colleagues, friends, and relevant audiences to understand how ideas land before they reach clients or the public.
+                While I collaborate closely with visual specialists, my primary contribution lies in identifying the right idea, shaping its expression, and ensuring creative coherence from concept to completion.
               </p>
             </div>
             <div className="relative overflow-hidden rounded-sm lg:max-w-sm lg:ml-auto">
@@ -84,46 +125,6 @@ export default function CreativeDirectionPage() {
               />
             </div>
           </div>
-        </motion.div>
-
-        {/* My Role */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-30px' }}
-          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-          className="max-w-2xl pt-16 md:pt-24"
-        >
-          <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">My Role</h2>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-8">
-            As a creative lead, I often act as the bridge between clients, creative teams, subject experts, and field realities.
-          </p>
-          <p className="text-[0.85rem] font-light leading-[1.8] text-[#8a8078] mb-4">
-            My responsibilities have included:
-          </p>
-          <ul className="space-y-3 mb-10">
-            {[
-              'Concept development and creative strategy',
-              'Pitch creation and client presentations',
-              'Campaign and narrative development',
-              'Stakeholder and client management',
-              'Creative problem-solving across project stages',
-              'Story and script development',
-              'Guiding visual and narrative direction',
-              'Reviewing storyboards, illustrations, and animations',
-              'Collaborating closely with art directors and designers to refine creative outputs',
-              'Leading compact multidisciplinary teams',
-              'Supervising feedback cycles and final delivery',
-            ].map((item, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60 mt-2" />
-                <span className="text-[0.9rem] font-light leading-[1.7] text-[#8a8078]">{item}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
-            While I collaborate closely with visual specialists, my primary contribution lies in identifying the right idea, shaping its expression, and ensuring creative coherence from concept to completion.
-          </p>
         </motion.div>
 
         {/* Creative Strengths */}
