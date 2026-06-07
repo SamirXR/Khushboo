@@ -301,7 +301,7 @@ function Work() {
       clients: [] as string[],
       link: undefined as string | undefined,
       externalLink: undefined as string | undefined,
-      image: '/work-photography.png',
+      image: '/work-visual.png',
     },
     {
       number: '06',
