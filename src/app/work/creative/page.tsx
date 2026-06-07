@@ -117,13 +117,13 @@ export default function CreativeDirectionPage() {
                 While I collaborate closely with visual specialists, my primary contribution lies in identifying the right idea, shaping its expression, and ensuring creative coherence from concept to completion.
               </p>
             </div>
-            <div className="relative overflow-hidden rounded-sm lg:max-w-sm lg:ml-auto">
+            <a href="https://www.youtube.com/watch?v=nIksllQcUwg" target="_blank" rel="noopener noreferrer" className="relative overflow-hidden rounded-sm lg:max-w-sm lg:ml-auto block group">
               <img
                 src="/work-creative-detail.gif"
                 alt="Creative Direction Work"
-                className="w-full object-contain rounded-sm"
+                className="w-full object-contain rounded-sm transition-transform duration-700 group-hover:scale-[1.02]"
               />
-            </div>
+            </a>
           </div>
         </motion.div>
 
