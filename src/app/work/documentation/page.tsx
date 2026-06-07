@@ -94,10 +94,12 @@ export default function DocumentationPage() {
           viewport={{ once: true, margin: '-30px' }}
           transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">End-to-End Documentation Leadership</h2>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-10 max-w-2xl">
-            Over the years, I have independently handled multiple stages of the documentation pipeline, from concept development to final delivery.
-          </p>
+          <div className="max-w-2xl">
+            <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">End-to-End Documentation Leadership</h2>
+            <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-10">
+              Over the years, I have independently handled multiple stages of the documentation pipeline, from concept development to final delivery.
+            </p>
+          </div>
 
           {/* Video Documentation */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-10">
@@ -127,16 +129,11 @@ export default function DocumentationPage() {
               </ul>
             </div>
             <div className="flex justify-center lg:justify-end">
-              <div className="w-full max-w-sm aspect-video rounded-sm overflow-hidden">
-                <iframe
-                  src="https://www.youtube.com/embed/pss01GIDXIc"
-                  title="India UNICEF-BMGF FSSM film June 2024"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </div>
+              <img
+                src="/work-documentation-video.gif"
+                alt="Video Documentation"
+                className="max-w-[280px] h-auto object-contain rounded-sm"
+              />
             </div>
           </div>
 
