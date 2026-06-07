@@ -93,6 +93,7 @@ export default function DocumentationPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-30px' }}
           transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          className="pt-16 md:pt-24"
         >
           {/* Video Documentation */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -163,7 +164,7 @@ export default function DocumentationPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-30px' }}
           transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-          className="max-w-2xl"
+          className="max-w-2xl pt-16 md:pt-24"
         >
           <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">Approach</h2>
           <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
